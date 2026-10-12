@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">📰 Fake News Detection</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="checker.html">News Checker</a></li>
+            <li><a href="literacy.html">Media Literacy</a></li>
+            <li><a href="warning.html">Warning Signs</a></li>
+            <li><a href="survey.html">Survey</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>🔍 Fake News Checker</h1>
+    <p>Enter a news message and check for common warning signs.</p>
+</section>
+
+<section class="checker">
+    <h2>Check Your News</h2>
+
+    <textarea id="newsInput"
+        placeholder="Paste or type the news message here..."></textarea>
+
+    <button class="btn" onclick="checkNews()">Check News</button>
+
+    <div id="result"></div>
+
+    <p class="note">
+        ⚠️ This tool is educational. It does not guarantee that a news
+        story is true or false. Always verify important information
+        using trusted sources.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Remember</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🔎 Check the Source</h3>
+            <p>Always check who published the information.</p>
+        </div>
+
+        <div class="card">
+            <h3>📅 Check the Date</h3>
+            <p>Old news can sometimes be shared as new information.</p>
+        </div>
+
+        <div class="card">
+            <h3>✅ Verify</h3>
+            <p>Compare important information with trusted sources.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Fake News Detection & Media Literacy Programme</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

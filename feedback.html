@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">📰 Fake News Detection</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="checker.html">News Checker</a></li>
+            <li><a href="literacy.html">Media Literacy</a></li>
+            <li><a href="survey.html">Survey</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="feedback-section">
+    <div class="feedback-container">
+        <a href="index.html" class="feedback-back">← Back to Home</a>
+
+        <h2>Website Feedback</h2>
+        <p>Your opinion matters! Help us improve your experience.</p>
+
+        <form id="feedbackForm">
+            <label for="visitorName">Your Name (Optional)</label>
+            <input type="text" id="visitorName"
+                   placeholder="Enter your name">
+
+            <label>Rate Our Website</label>
+            <div class="star-rating" id="starRating">
+               <span class="star" data-rating="1">★</span>
+<span class="star" data-rating="2">★</span>
+<span class="star" data-rating="3">★</span>
+<span class="star" data-rating="4">★</span>
+<span class="star" data-rating="5">★</span>
+            </div>
+
+            <input type="hidden" id="rating" value="0">
+
+            <label for="feedbackMessage">Your Feedback</label>
+            <textarea id="feedbackMessage"
+                      placeholder="Write your feedback here..."
+                      rows="4" required></textarea>
+
+            <button type="submit" class="feedback-submit">
+                Submit Feedback →
+            </button>
+
+            <p id="feedbackStatus" role="status"></p>
+        </form>
+
+<div class="reviews-section">
+    <h2>⭐ User Reviews & Ratings</h2>
+    <p>See what people think about our website.</p>
+
+    <div id="reviewsList">
+        Loading reviews...
+    </div>
+</div>
+
+    </div>
+</section>
+
+<footer>
+    <h3>Fake News Detection & Media Literacy Programme</h3>
+    <p>Community Engagement Project</p>
+    <p>Promoting responsible and informed digital citizenship.</p>
+    <p class="copyright">© 2026 Fake News Detection & Media Literacy Programme</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
